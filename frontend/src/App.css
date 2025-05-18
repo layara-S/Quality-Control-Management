@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body, html, * {
+  font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+}
+
+/* =========================
+   YOUR EXISTING CODE
+   (unchanged)
+========================= */
+
+/* Basic layout structure - keeping your existing structure */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* DataGrid styling override - keeping as is */
+.MuiDataGrid-root {
+  border: none !important;
+}
+
+/* Updated navbar styles with your gradient and increased height */
+nav {
+  background: linear-gradient(45deg, #E100FF 0%, #a501ba 56%, #a501ba 85%);
+  color: #fff;
+  padding: 0 1rem;
+  height: 80px; /* increased height */
+  display: flex;
+  align-items: center; /* vertically center logo and text */
+  box-shadow: 0 2px 6px rgba(225, 0, 255, 0.3);
+}
+
+/* Additional theme styles that won't conflict with components */
+.theme-button {
+  background: linear-gradient(45deg, #E100FF 0%, #FD74B8 56%, #FF66B2 85%);
+  color: white;
+  border: none;
+  box-shadow: 0 2px 6px rgba(225, 0, 255, 0.3);
+}
+
+.theme-border {
+  border: 2px solid #FD74B8;
+}
+
+.theme-text {
+  color: #E100FF;
+}
+
+.theme-background {
+  background-color: rgba(253, 116, 184, 0.1);
+}
+
+/* =========================
+   NEW STYLES BELOW
+========================= */
+
+/* 1) Purple-Pink background for entire page */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #E100FF 0%, #FD74B8 56%, #FF66B2 85%);
+}
+
+/* 2) White "card" container for your table 
+   - Wrap your table or DataGrid in a <div className="table-wrapper"> 
+   - This centers it, gives it a white background, and a drop shadow
+*/
+.table-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 1200px; /* or whatever width you prefer */
+  margin: 20px auto; /* center horizontally with auto left/right margins */
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* 3) Logo styling (use in Navbar or Sidebar) */
+.company-logo {
+  height: 40px;     /* or whatever looks good */
+  width: auto;      /* maintain aspect ratio */
+  margin-right: 10px;
+  vertical-align: middle;  /* keep it aligned with text nicely */
+}
