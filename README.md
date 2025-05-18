@@ -1,4 +1,4 @@
-# 🌫️ MistyEMS – Quality Control Management
+# MistyEMS – Quality Control Management
 
 *A full-stack QC management system for Misty Productions, a video editing company.*
 
